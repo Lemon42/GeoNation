@@ -46,8 +46,8 @@ h1
 {
     font-family: 'Montserrat', sans-serif;
     
-    background: -webkit-linear-gradient(left, #00FFFF 37%, #00FF7F 90%);
-    background: linear-gradient(to right, ##00FFFF 37%, #00FF7F 90%);
+    background: -webkit-linear-gradient(left, #00FFFF 37%, #0DFF76 90%);
+    background: linear-gradient(to right, ##00FFFF 37%, #0DFF76 90%);
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -98,8 +98,8 @@ a{
 
 a:hover
 {
-    background: -webkit-linear-gradient(left, #00FFFF 0%, #00FF7F 100%);
-    background: linear-gradient(to right, ##00FFFF 0%, #00FF7F 100%);
+    background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 100%);
+    background: linear-gradient(to right, ##00FFFF 0%, #0DFF76 100%);
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

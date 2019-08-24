@@ -12,8 +12,8 @@ h1
 {
     font-family: 'Montserrat', sans-serif;
     
-    background: -webkit-linear-gradient(left, #00FFFF 20%, #00FF7F 90%);
-    background: linear-gradient(to right, ##00FFFF 20%, #00FF7F 90%);
+    background: -webkit-linear-gradient(left, #00FFFF 20%, #0DFF76 90%);
+    background: linear-gradient(to right, ##00FFFF 20%, #0DFF76 90%);
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
