@@ -20,6 +20,15 @@ h1
     
 }
 
+.text
+{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    position: relative;
+    text-align:justify;
+}
+
+/* texto responsivo */
 @media screen and (min-width: 801px) {
   h1 {
     font-size: 80px;
