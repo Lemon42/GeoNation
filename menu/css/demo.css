@@ -1,0 +1,29 @@
+html, body {
+  overflow-x: hidden;
+  background: black;
+}
+
+/* Lists */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Menu Button */
+.menu-btn {
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 30px;
+  background: #4D4D4D;
+  color: #000;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu-btn:hover {
+  background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 100%);
+  background: linear-gradient(to right, #00FFFF 0%, #0DFF76 100%);
+}
