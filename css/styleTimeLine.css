@@ -23,16 +23,26 @@ img { border: 0; max-width: 100%; }
 }
 
 .tldate {
+  font-family: 'Montserrat', sans-serif;
   display: block;
   width: 200px;
   background: #414141;
   border: 3px solid #212121;
+  border-radius: 7px;
   color: #ededed;
   margin: 0 auto;
   padding: 3px 0;
   font-weight: bold;
   text-align: center;
   -webkit-box-shadow: 0 0 11px rgba(0,0,0,0.35);
+}
+
+.tldate text{
+  background: -webkit-linear-gradient(left, #00FFFF 20%, #0DFF76 90%);
+  background: linear-gradient(to right, ##00FFFF 20%, #0DFF76 90%);
+    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .timeline li {
@@ -124,13 +134,13 @@ img { border: 0; max-width: 100%; }
   top: 23px;
   left: 50%;
   text-align: center;
-  background: #6a8db3;
+  background: #06803B;
   color: #fff;
   width: 35px;
   height: 35px;
   line-height: 35px;
   margin-left: -16px;
-  border: 3px solid #90acc7;
+  border: 3px solid #0BE66A;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -143,7 +153,14 @@ img { border: 0; max-width: 100%; }
 
 .tl-heading h4 {
   margin: 0;
-  color: #c25b4e;
+  font-family: 'Arial';
+  font-weight: bold;
+    
+  background: -webkit-linear-gradient(left, #00FFFF 20%, #0DFF76 90%);
+  background: linear-gradient(to right, ##00FFFF 20%, #0DFF76 90%);
+    
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tl-body p, .tl-body ul {
