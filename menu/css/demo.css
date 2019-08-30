@@ -14,14 +14,14 @@ ul {
 .menu-btn {
   width: 100px;
   padding: 10px;
-  margin-bottom: 30px;
   background: #4D4D4D;
   color: #000;
-  background: #fff;
+  background: #ababab;
   text-align: center;
   cursor: pointer;
   border: 0px;
   font-family: 'Montserrat', sans-serif;
+  opacity: 1;
 }
 .menu-btn:hover {
   background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 100%);

@@ -14,6 +14,7 @@
   color: #FFF;
   padding: 15px 30px;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
 .pushy a:hover {	
   background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 100%);
@@ -128,6 +129,7 @@
 .pushy-submenu > ul {
   padding-left: 15px;
   transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  font-family: 'Raleway', sans-serif;
 }
 .pushy-submenu > ul .pushy-link {
   transition: opacity 0.2s ease-in-out;
@@ -139,8 +141,11 @@
   text-align: left;
   background: transparent;
   border: 0;
+  outline: none;
 }
 .pushy-submenu button:hover {
+  
+  font-family: 'Raleway', sans-serif;
   background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 100%);
   background: linear-gradient(to right, #00FFFF 0%, #0DFF76 100%);
     
@@ -193,3 +198,4 @@
   -ms-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
 }
+
