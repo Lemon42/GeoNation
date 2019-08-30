@@ -58,3 +58,8 @@ body, html {
     background-attachment: scroll;
   }
 }
+
+img{
+	width:100%;
+	height:auto;
+}
