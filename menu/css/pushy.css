@@ -16,9 +16,11 @@
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
+
+
 .pushy a:hover {	
-  background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 100%);
-  background: linear-gradient(to right, #00FFFF 0%, #0DFF76 100%);
+  background: -webkit-linear-gradient(left, #00FFFF 0%, #0DFF76 70%);
+  background: linear-gradient(to right, #00FFFF 0%, #0DFF76 70%);
     
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -86,6 +88,13 @@
   transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
 }
 
+.pushy-content h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
 /* Site Overlay */
 .site-overlay {
   display: none;
@@ -142,6 +151,7 @@
   background: transparent;
   border: 0;
   outline: none;
+  font-family: 'Raleway', sans-serif;
 }
 .pushy-submenu button:hover {
   
