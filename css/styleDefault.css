@@ -52,6 +52,16 @@ body, html {
   background-size: cover;
 }
 
+.parallax h2{
+
+  color: #C0C0C0;
+  font-size: 11px;
+  position:relative;
+  margin-top: 485px;
+  float: right;
+  margin-right: 3px;
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .parallax {
@@ -62,4 +72,13 @@ body, html {
 img{
 	width:100%;
 	height:auto;
+}
+
+#referenciaPNG h2{
+  color: #C0C0C0;
+  font-size: 11px;
+  position:relative;
+  margin-top: 0px;
+  float: right;
+  margin-right: 3px;
 }
