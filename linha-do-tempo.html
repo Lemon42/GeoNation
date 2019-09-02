@@ -16,6 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     
+    <!--MENU-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="menu/css/demo.css">
+    <link rel="stylesheet" href="menu/css/pushy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+      
     <title>GeoNation - TimeLine</title>
     <link  size="20x20px" rel='shortcut icon' href="img/Icone.ico"/>
       
@@ -26,7 +32,64 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+       <!-- MENU -->
+        <!-- MENU TABELA -->
+        <nav class="pushy pushy-left" data-focus="#first-link">
+            <div class="pushy-content">
+                <h1>Menu</h1>
+                <ul>
+                    <li class="pushy-link"><a href="index.html">Início</a></li>
+                    <li class="pushy-link"><a href="historia.html">História da Terra</a></li>
+					<li class="pushy-link"><a href="#">Linha do Tempo</a></li>
+                    <h1>Páginas</h1>
+                    <li class="pushy-submenu">
+                        <button id="first-link">Cenozoico</button>
+                        <ul>
+                            <li class="pushy-link"><a href="paginas/cenozoico/quartenario.html">Quaternário</a></li>
+                            <li class="pushy-link"><a href="paginas/cenozoico/neogeno.html">Neógeno</a></li>
+                            <li class="pushy-link"><a href="paginas/cenozoico/paleoceno.html">Paleoceno</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button id="first-link">Mesozoico</button>
+                        <ul>
+                            <li class="pushy-link"><a href="paginas/mesozoico/cretaceo.html">Cretáceo</a></li>
+                            <li class="pushy-link"><a href="paginas/mesozoico/jurassico.html">Jurássico</a></li>
+                            <li class="pushy-link"><a href="paginas/mesozoico/triassico.html">Triássico</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-submenu">
+                        <button id="first-link">Paleozoico</button>
+                        <ul>
+                            <li class="pushy-link"><a href="paginas/paleozoico/permiano.html">Permiano</a></li>
+                            <li class="pushy-link"><a href="paginas/paleozoico/caronifero.html">Caronífero</a></li>
+                            <li class="pushy-link"><a href="paginas/paleozoico/devoniano.html">Devoniano</a></li>
+                            <li class="pushy-link"><a href="paginas/paleozoico/siluriano.html">Siluriano</a></li>
+                            <li class="pushy-link"><a href="paginas/paleozoico/ordoviciano.html">Ordoviciano</a></li>
+                            <li class="pushy-link"><a href="paginas/paleozoico/cambriano.html">Cambriano</a></li>
+                        </ul>
+                    </li>
+                    <li class="pushy-link"><a href="paginas/proterozoico.html">Proterozoico</a></li>
+                    <li class="pushy-link"><a href="paginas/arqueano.html">Arqueano</a></li>
+                    <h1>Outros</h1>
+                    <li class="pushy-link"><a href="infos/sobre.html">Sobre</a></li>
+                    <li class="pushy-link"><a href="infos/referencia.html">Referência</a></li>
+                </ul>
+            </div>
+        </nav>
+		<!-- Voltar com um click -->
+        <div class="site-overlay"></div>
+        <!--MenuBOTÃO-->
+      
+        <div id="container">  
+        <button class="menu-btn">&#9776; Menu</button>
+		</div>
 
+        <!-- JS do MENU -->
+        <script src="menu/js/pushy.min.js"></script>
+      <!-- MENU FIM -->        
+    
     <div class="container-fluid">
 		<center><h1>TimeLine</h1></center>
     </div>
