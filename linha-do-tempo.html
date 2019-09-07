@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="menu/css/pushy.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
       
-    <title>GeoNation - TimeLine</title>
+    <title>GeoNation - Linha do Tempo</title>
     <link  size="20x20px" rel='shortcut icon' href="img/Icone.ico"/>
       
 
@@ -63,7 +63,7 @@
                         <button id="first-link">Paleozoico</button>
                         <ul>
                             <li class="pushy-link"><a href="paginas/paleozoico/permiano.html">Permiano</a></li>
-                            <li class="pushy-link"><a href="paginas/paleozoico/carbonifero.html">Carbonífero</a></li>
+                            <li class="pushy-link"><a href="paginas/paleozoico/caronifero.html">Caronífero</a></li>
                             <li class="pushy-link"><a href="paginas/paleozoico/devoniano.html">Devoniano</a></li>
                             <li class="pushy-link"><a href="paginas/paleozoico/siluriano.html">Siluriano</a></li>
                             <li class="pushy-link"><a href="paginas/paleozoico/ordoviciano.html">Ordoviciano</a></li>
@@ -78,12 +78,31 @@
                 </ul>
             </div>
         </nav>
+      
+        <script>
+            
+            function aparecerBolinha()
+            {
+                document.getElementById("circulo1").style = "visibility: visible;";
+                document.getElementById("circulo2").style = "visibility: visible;";
+            }
+
+        </script>  
+      
 		<!-- Voltar com um click -->
-        <div class="site-overlay"></div>
+        <div class="site-overlay" onclick="return aparecerBolinha()"></div>
         <!--MenuBOTÃO-->
+        
+    <script>
+            function esconderBolinha()
+            {
+                document.getElementById("circulo1").style = "visibility: hidden;";
+                document.getElementById("circulo2").style = "visibility: hidden;";
+            }
+    </script>
       
         <div id="container">  
-        <button class="menu-btn">&#9776; Menu</button>
+        <button class="menu-btn" onclick="return esconderBolinha()">&#9776; Menu</button>
 		</div>
 
         <!-- JS do MENU -->
@@ -91,122 +110,207 @@
       <!-- MENU FIM -->        
     
     <div class="container-fluid">
-		<center><h1>TimeLine</h1></center>
+		<center><h1>Linha do tempo</h1></center>
     </div>
-    
-	<div class="container">
-        <div class="text">Essa é nossa linha do tempo, ela está na medida ‘Ma’ que significa mega-annum, uma unidade de tempo muito usada na geologia que é o símbolo de milhão (1.000.000) de anos, caso queira mais informações sobre um período basta clicar no círculo verde que corresponde a ele.</div><br>
-     </div>
 	
+	<div class="container">
+        <div class="text">Essa é nossa linha do tempo, caso queira mais informações sobre um período basta clicar no círculo verde que corresponde a ele.</div><br>
+	</div>
+      
     <div class="container">
       <ul class="timeline">
-          <li><div class="tldate"><text>Cenozoico</text></div></li>
+	<li><div class="tldate"><text>Arqueano</text></div></li>
+	       <li>
+          <a href="#"><div class="tl-circ" id="circulo1"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Era Arqueana</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Começado há cerca de 4 bilhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Também chamada de era Arqueozoica, esse tempo geológico, a Terra é marcada pelo surgimento de formas simples de vida, como bactérias, algas e organismos simples. Pouco é conhecido sobre o meio ambiente, contudo. Esse tempo geológico é marcado pelo surgimento de rochas magmáticas e do relevo caracterizado por escudos cristalinos (escudos cristalinos se forma geralmente em áreas de baixa altitude. São constituídos de rochas cristalinas tanto metamórficas quanto magmáticas)</p>
+				<p><img src="img/Larqueana.jpg" style="border-radius: 5px"></p>			  
+            </div>
+          </div>
+        </li>
+
+	<li><div class="tldate"><text>Proterozoico</text></div></li>  
+	      <li class="timeline-inverted">
+          <a href="#"><div class="tl-circ" id="circulo2"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Era Proterozoica</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Teve início a 2.5 bilhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Durante a era proterozoica, a atmosfera e os oceanos mudaram significativamente, aumentando a atividade biológica em consequência do acúmulo de oxigênio. Como houve aumento da oferta de oxigênio, ocorrem os primeiros registros de organismos com a capacidade de realizar fotossíntese. É nesse período que surgem organismos eucariontes, além de algas verdes e vermelhas sobre a face do planeta</p>
+            </div>
+          </div>
+        </li>
+	  
+	<li><div class="tldate"><text>Paleozoico</text></div></li>
+			<li>
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Cambriano</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Seu período iniciou por volta de 542 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Foi o marco inicial para que a Terra começasse a expansão orgânica, dando origem à vida. A partir daí começaram a surgir os primeiros animais com partes mineralizadas, decorrentes das rochas e fósseis que datam do período. Neste período houve avanços significativos no bioma marinho. Em relação à fauna, os trilobitas, arqueociátos e equinodermos surgiram pela primeira vez em rochas da Sibéria. A flora passou por um longo processo de oxidação, pois os seres que realizavam o processo da fotossíntese estavam se multiplicando gradativamente</p>
+            </div>
+          </div>
+        </li>
+		
+        <li class="timeline-inverted">
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Ordoviciano</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Ocorrido à aproximadamente 510 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Durante essa passagem ocorreram várias transformações no planeta, Chamada de Gondwana, a imensa massa continental ficou submetida a um intenso período de glaciação. A vegetação é caracterizada pelo surgimento dos primeiros vegetais fixados ao substrato terrestre, havendo uma grande predominância de algas que cobriam as regiões oceânicas. Esse período marcou para os animais invertebrados uma grande explosão quanto à diversidade de espécies. O momento circunstanciou o surgimento dos primeiros peixes agnatas (sem mandíbula)</p>
+			  <p><img src="img/Lordo.jpg" style="border-radius: 5px"></p>	
+            </div>
+          </div>
+        </li>
+		
+		  <li>
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Siluriano</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Há cerca de 443 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Com a radical transformação climática que dizimou grande parte do bioma gerado pelo Período Ordoviciano, o Período Siluriano é marcado por gerar um processo de revitalização na fauna e na flora. A glaciação fez com que alguns territórios ficassem submersos mesmo com a amenização do clima, já que as geleiras formadas acabariam sendo derretidas com o passar dos anos. Nesta época surgiram diversas espécies de invertebrados trilobites, crinoides, escorpiões marinhos e cefalópodes. Também apareceram recifes de corais, as primeiras plantas terrestres, peixes com mandíbulas de água doce e os primeiros insetos similares às aranhas e centopeias</p>
+            </div>
+          </div>
+        </li>
+		
+        <li class="timeline-inverted">
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Devoniano</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>iniciado à 416 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>As principais transformações aconteceram na flora, com o crescimento exponencial de pequenas plantas terrestres através do desenvolvimento dos esporos. Com este processo, as plantas conseguiram se fertilizar com as sementes e atingir a altura de árvores. Na fauna, alguns especialistas nomeiam a era como a ‘idade dos peixes’, pois surgem os placodermos (peixes encouraçados que parecem piranhas) e os primeiros tubarões</p>
+            </div>
+          </div>
+        </li>
 
         <li>
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Carbonífero</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Iniciou-se 360 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Carbonífero também teve suas subdivisões. Particularmente na América do Norte, ele é dividido em Mississipiano (mais antigo) e Pensilvaniano (mais recente). Transformações climáticas também marcariam o período. O gigante continente Gondwana (atual território de África, Oceania, América do Sul e Antártica) passou por um processo de glaciação</p>
+			  <p><img src="img/Lcarbo.jpg" style="border-radius: 5px"></p>	
+            </div>
+          </div>
+        </li>
+		
+		  <li class="timeline-inverted">
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Permiano</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Seu começo ocorreu à 290 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Foi neste período que o supercontinente Pangeia se formou. Com a imensa concentração de massa terrestre, o planeta passou por uma grande transformação climática que o tornou mais seco. Pouca circulação de água no Pangeia fez com que o oxigênio na atmosfera diminuísse e, consequentemente, acabasse com a abundância de florestas. Neste período ocorreu uma das maiores extinções</p>
+            </div>
+          </div>
+        </li>
+
+		<li><div class="tldate"><text>Mesozoico</text></div></li>
+        <li>
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Triássico</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Seu início localiza-se à 251 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Foi marcado pelo surgimento dos tão grandes dinossauros que deram início a esse período. Apareceram outros animais como mamíferos, repteis voadores (pterosauros), crocodilo, tartarugas dentre outros. Sua vegetação começou a se expandir variando de coníferas, samambaias com sementes a muitas outras espécies</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-inverted">
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Jurassico</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Há cerca de 199 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>suas principais características o início da fragmentação da Pangeia e o surgimento dos dinossauros. Ademais, foi nesse período que surgem as reservas de petróleo, decorrente do acúmulo de sedimentos</p>
+              <p><img src="img/Ljura.jpg" style="border-radius: 5px"></p>
+            </div>
+          </div>
+        </li>
+		
+        <li>
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Cretáceo</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Iniciado à 135 milhões de anos atrás</small></p>
+            </div>
+            <div class="tl-body">
+              <p>Dentre as principais características desse período temos a proliferação de espécies (animais e vegetais), além da separação de alguns continentes, como a África e da América do Sul que anteriormente, estavam unidos numa única massa continental denominada Pangeia</p>
+            </div>
+          </div>
+        </li>
+          <li><div class="tldate"><text>Cenozoico</text></div></li>
+		  
+        <li class="timeline-inverted">
 			<a href="#"><div class="tl-circ"></div></a>
           <div class="timeline-panel">
             <div class="tl-heading">
-              <h4>Surprising Headline Right Here</h4>
+              <h4>Período Paleoceno</h4>
+			  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Início aproximado em 65 milhões de anos atrás</small></p>
             </div>
             <div class="tl-body">
-              <p>Lorem Ipsum and such.</p>
+              <p>Os blocos continentais ainda marchavam devagar rumo às posições encontradas atualmente. Naquela época,  encontravam-se diferentes: Austrália e América do Sul estavam juntas à Antártida. A Índia seguia rumo à Ásia e ao norte da África e o sul da Europa formavam vários  arquipélagos localizados entre os oceanos Atlântico e Tétis</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#"><div class="tl-circ"></div></a>
+          <div class="timeline-panel">
+            <div class="tl-heading">
+              <h4>Período Neógeno</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Ocorreu à 23 milhões anos atrás </small></p>
+            </div>
+            <div class="tl-body">
+              <p>Divido em duas épocas, Mioceno e Plioceno. Mioceno foi um período por ser caracterizado por um clima global mais ameno que propiciou a expansão das gramíneas. A ponte entre as Américas do Norte e do Sul foi estabelecida no Plioceno, o que gerou o "Grande Intercâmbio Americano" de faunas e dispersão de floras entre os dois continentes</p>
+				<p><img src="img/Lneo.png" style="border-radius: 5px"></p>
             </div>
           </div>
         </li>
 
         <li class="timeline-inverted">
-          <a href="#"><div class="tl-circ"></div></a>
+			<a href="#"><div class="tl-circ"></div></a>
           <div class="timeline-panel">
             <div class="tl-heading">
-              <h4>Breaking into Spring!</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 4/07/2014</small></p>
+              <h4>Período Quaternário</h4>
+			  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2,6 milhões de anos e estende-se até os dias de hoje </small></p>
             </div>
             <div class="tl-body">
-              <p>Hope the weather gets a bit nicer...</p>
-
-              <p>Y'know, with more sunlight.</p>
+              <p>Compreende depósitos sedimentares juntamente com restos de animais e vegetais que vivem ainda hoje. As características mais marcantes deste período foram as glaciações e o aparecimento do homem, há apenas 1,8 milhões de anos</p>
             </div>
           </div>
         </li>
-
-        <li><div class="tldate"><text>Cenozoico</text></div></li>
-
-        <li>
-          <a href="#"><div class="tl-circ"></div></a>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>New Apple Device Release Date</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/22/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>In memory of Steve Jobs.</p>
-            </div>
-          </div>
-        </li>
-        <li class="timeline-inverted">
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>No icon here</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/16/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Here you'll find some beautiful photography for your viewing pleasure, courtesy of <a href="http://lorempixel.com/">lorempixel</a>.</p>
-
-              <p><img src="img/icone.png" alt="lorem pixel"></p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#"><div class="tl-circ"></div></a>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Some Important Date!</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/03/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Write up a quick summary of the event.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-panel noarrow">
-            <div class="tl-heading">
-              <h4>Secondary Timeline Box</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 3/01/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>This might be a follow-up post with related info. Maybe we include some extra links, tweets, user comments, photos, etc.</p>
-            </div>
-          </div>
-        </li>
-
-        <li><div class="tldate"><text>Cenozoico</text></div></li>
-
-        <li class="timeline-inverted">
-          <a href="#"><div class="tl-circ"></div></a>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>The Winter Months</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/23/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Gee time really flies when you're having fun.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#"><div class="tl-circ"></div></a>
-          <div class="timeline-panel">
-            <div class="tl-heading">
-              <h4>Yeah we're pretty much done here</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 02/11/2014</small></p>
-            </div>
-            <div class="tl-body">
-              <p>Wasn't this fun though?</p>
-            </div>
-          </div>
-        </li>
-        </ul>
+  
+		   </ul>
     </div>
   </body>
 </html>
